@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link'
 import { useEffect, useRef, useState } from "react";
 import { MenuIcon, CloseIcon } from "./Icons";
 
@@ -61,7 +62,7 @@ export function MobileNav() {
           />
           <div
             id="mobile-menu"
-            className="fixed top-16 right-0 z-50 w-64 h-[calc(100vh-4rem)] bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 transform translate-x-0 transition-transform duration-300 ease-in-out"
+            className="fixed top-16 right-0 z-50 w-64 h-[calc(100vh-4rem)] bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 transform translate-x-0 transition-transform duration-300 ease-in-out"    
             role="dialog"
             aria-modal="true"
             aria-label="Mobile navigation menu"
@@ -70,7 +71,7 @@ export function MobileNav() {
               <a
                 href="#services"
                 onClick={closeMenu}
-                ref={firstLinkRef}
+                ref={firstLinkRef as any}
                 className="text-base font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2"
               >
                 Services
@@ -83,12 +84,19 @@ export function MobileNav() {
                 About
               </a>
               <a
-                href="#work"
+                href="#projects"
                 onClick={closeMenu}
                 className="text-base font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2"
               >
-                Work
+                Projects
               </a>
+              <Link
+                href="/resume"
+                onClick={closeMenu}
+                className="text-base font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2"
+              >
+                Resume
+              </Link>
               <a
                 href="#contact"
                 onClick={closeMenu}

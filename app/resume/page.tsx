@@ -2,6 +2,7 @@
 // DIGITAL RESUME - John Smith
 // ============================================================
 
+import Link from 'next/link'
 import {
   CheckIcon,
   LinkedInIcon,
@@ -15,17 +16,17 @@ export default function ResumePage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between h-16">
           <div className="flex items-center gap-2 cursor-pointer">
-            <a href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white font-bold text-sm">
                 JS
               </div>
-              <span className="text-xl font-bold tracking-tight font-display text-slate-900 dark:text-white">
+              <span className="text-xl font-bold tracking-tight font-display text-slate-900 dark:text-white">   
                 John Smith
               </span>
-            </a>
+            </Link>
           </div>
           <div className="hidden md:flex items-center gap-8">
-            <a href="/" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Home</a>
+            <Link href="/" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Home</Link>
             <a href="#experience" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Experience</a>
             <a href="#skills" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Skills</a>
             <a href="#education" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Education</a>
@@ -35,7 +36,6 @@ export default function ResumePage() {
           </div>
         </div>
       </nav>
-
       {/* HERO - Professional Summary */}
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
         <div className="absolute top-0 right-0 -z-10 w-[600px] h-[600px] bg-blue-100/50 dark:bg-blue-900/10 rounded-full blur-3xl opacity-70 translate-x-1/3 -translate-y-1/4"></div>

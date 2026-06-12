@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import { MobileNav } from '@/components/MobileNav'
+
 export default function Home() {
   return (
     <>
@@ -16,7 +19,7 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-6 text-sm" aria-label="Main navigation">
             <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
             <a href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</a>
-            <a href="/resume" className="text-gray-300 hover:text-white transition-colors">Resume</a>
+            <Link href="/resume" className="text-gray-300 hover:text-white transition-colors">Resume</Link>
             <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
           </nav>
         </div>
@@ -35,9 +38,9 @@ export default function Home() {
               <a href="#projects" className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors">
                 Check My Projects
               </a>
-              <a href="/resume" className="px-6 py-3 border border-gray-600 hover:border-gray-400 text-white rounded-lg font-medium transition-colors">
+              <Link href="/resume" className="px-6 py-3 border border-gray-600 hover:border-gray-400 text-white rounded-lg font-medium transition-colors">
                 View My Resume
-              </a>
+              </Link>
             </div>
           </div>
         </section>
