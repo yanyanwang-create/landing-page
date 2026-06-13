@@ -21,7 +21,7 @@ export default function ResumePage() {
                 JS
               </div>
               <span className="text-xl font-bold tracking-tight font-display text-slate-900 dark:text-white">   
-                John Smith
+                Yanyan Wang
               </span>
             </Link>
           </div>
@@ -30,7 +30,7 @@ export default function ResumePage() {
             <a href="#experience" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Experience</a>
             <a href="#skills" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Skills</a>
             <a href="#education" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Education</a>
-            <a href="mailto:john@email.com" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+            <a href="mailto:wangyy6416@gmail.com" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
               Contact Me
             </a>
           </div>
@@ -45,10 +45,10 @@ export default function ResumePage() {
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="flex-grow">
                 <h1 className="text-4xl md:text-5xl font-bold font-display tracking-tight text-slate-900 dark:text-white mb-2">
-                  John Smith
+                  Yanyan Wang
                 </h1>
                 <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium mb-4">
-                  AI Orchestration Architect
+                  CSTU Student | AI and Software Development Learner
                 </p>
 
                 {/* Quick info */}
@@ -64,13 +64,13 @@ export default function ResumePage() {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    john@email.com
+                    wangyy6416@gmail.com
                   </div>
                 </div>
 
                 {/* Professional Summary */}
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                  Engineer, systems thinker, and builder specializing in designing intelligent systems where AI agents collaborate to solve complex problems. Over nine years of experience building and rebuilding systems with a focus on orchestration layers that coordinate multiple AI models and data sources.
+                  CSTU student with a background in pharmacy and healthcare management, currently studying Artificial Intelligence, software development, and cloud computing.
                 </p>
 
                 {/* Social links */}
@@ -203,7 +203,7 @@ export default function ResumePage() {
       <footer className="py-8 bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center text-sm text-slate-600 dark:text-slate-400">
-            © {new Date().getFullYear()} John Smith. All rights reserved.
+            © {new Date().getFullYear()} Yanyan Wang. All rights reserved.
           </div>
         </div>
       </footer>
